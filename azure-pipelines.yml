@@ -59,8 +59,6 @@ stages:
     - script: docker container ls
       displayName: Exibir containers em execução
     - script: |
-        #sudo snap install kafkactl
-        #kafkactl
         sudo apt-get install kafkacat
         kafkacat -h
       displayName: Instalar o kcat/kafkacat
